@@ -11,9 +11,9 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.ReactContext;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.google.firebase.messaging.FirebaseMessagingService;
 
-public class InstanceIdService extends FirebaseInstanceIdService {
+public class InstanceIdService extends FirebaseMessagingService {
 
     private static final String TAG = "InstanceIdService";
 
@@ -62,3 +62,4 @@ public class InstanceIdService extends FirebaseInstanceIdService {
         });
     }
 }
+
